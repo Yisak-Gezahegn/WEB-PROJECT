@@ -1062,7 +1062,7 @@
             text-decoration: underline;
         }
 
-        /* Footer */
+        
         footer {
             background-color: var(--dark);
             color: white;
@@ -1198,10 +1198,10 @@
         }
    /* --- Restaurant and Developer Dashboard Styles --- */
 
-/* General Admin Layout */
+
 .admin-content {
     padding: 60px 0;
-    min-height: 80vh; /* Ensure content pushes footer down */
+    min-height: 80vh; 
 }
 
 .admin-content h1 {
@@ -1219,10 +1219,10 @@
     margin-top: 40px;
     margin-bottom: 20px;
     font-size: 1.8em;
-    color: #4CAF50; /* A primary brand color */
+    color: #4CAF50; 
 }
 
-/* Stats Grid for Quick Overview */
+
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1245,7 +1245,7 @@
 }
 
 .stat-card i {
-    color: #FF9800; /* Use a prominent color for icons */
+    color: #FF9800;
     margin-bottom: 15px;
 }
 
@@ -1261,7 +1261,7 @@
     margin-bottom: 15px;
 }
 
-/* Table Styling for Orders/Reports */
+
 .table-responsive {
     overflow-x: auto;
 }
@@ -1274,7 +1274,7 @@ table {
 }
 
 table th, table td {
-    border: 1px solid #eee;
+    border: 2px solid #0e0101;
     padding: 15px;
     text-align: left;
 }
@@ -1284,10 +1284,9 @@ table thead tr {
     color: #4CAF50;
 }
 
-/* Specific button styles for actions */
+
 .accept-btn {
-    background-color: #4CAF50; /* Green */
-    color: white;
+    background-color: #4CAF50; 
     border: none;
     padding: 8px 15px;
     cursor: pointer;
@@ -1296,7 +1295,7 @@ table thead tr {
 }
 
 .reject-btn {
-    background-color: #f44336; /* Red */
+    background-color: #f44336; 
     color: white;
     border: none;
     padding: 8px 15px;
