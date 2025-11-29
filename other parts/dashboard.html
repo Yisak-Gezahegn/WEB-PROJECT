@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Dashboard - ETHIO FOOD</title>
+    <link rel="stylesheet" href="all.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-container">
+            <a href="../index.html" class="logo">
+                &#127839 ETHIO FOOD
+            </a>
+            
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="orders.html">Orders</a></li>
+                    <li><a href="settings.html">Settings</a></li>
+                </ul>
+            </nav>
+            
+            <div class="auth-buttons">
+                <span class="welcome-text">Welcome, Addis Ababa Restaurant</span>
+                <a href="../index.html" class="btn btn-secondary">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    
+    <section class="admin-content">
+        <div class="container">
+            <h1>&#127968 Restaurant Dashboard</h1>
+            <p>Manage your orders, menu, and sales performance.</p>
+            
+            <div class="stats-grid">
+                
+                <div class="stat-card" id="new-orders">
+                    <i class="fas fa-box-open fa-3x"></i>
+                    <h3><span id="order-count">5</span> New Orders</h3>
+                    <p>Action required! See all pending orders.</p>
+                    <a href="orders.html" class="btn">View Orders</a>
+                </div>
+                
+                <div class="stat-card" id="today-sales">
+                    <i class="fas fa-wallet fa-3x"></i>
+                    <h3>Total Sales (Today)</h3>
+                    <p id="sales-amount">ETB 4,500.00</p>
+                    <a href="#" class="btn btn-secondary">View Reports</a>
+                </div>
+                
+                <div class="stat-card" id="menu-status">
+                    <i class="fas fa-list-alt fa-3x"></i>
+                    <h3>Menu Status</h3>
+                    <p><span id="dish-count">12</span> dishes currently active.</p>
+                    <a href="menu.html" class="btn">Edit Menu</a>
+                </div>
+            </div>
+
+            <h2 class="section-heading">&#128197 Pending Orders</h2>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Customer</th>
+                            <th>Amount</th>
+                            <th>Time Placed</th>
+                            <th class="text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="pending-orders-body">
+                        <tr>
+                            <td>#1001</td>
+                            <td>Yisak Gezahegn</td>
+                            <td>ETB 350.00</td>
+                            <td>15:30 EAT</td>
+                            <td class="text-center">
+                                <button class="btn accept-btn">Accept</button>
+                                <button class="btn reject-btn">Reject</button>
+                            </td>
+                        </tr>
+                        </tbody>
+                </table>
+            </div>
+            
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                <p>&copy; 2025 ETHIO FOOD Delivery Service. Restaurant Panel.</p>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
