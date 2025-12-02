@@ -1062,7 +1062,7 @@
             text-decoration: underline;
         }
 
-        /* Footer */
+        
         footer {
             background-color: var(--dark);
             color: white;
@@ -1198,12 +1198,20 @@
         }
    /* --- Restaurant and Developer Dashboard Styles --- */
 
+<<<<<<< HEAD
 .admin-content .container{
     background-image: url(../image/back2_res.jpg);
 }
 .admin-content {
     padding: 60px 0;
     min-height: 80vh; 
+=======
+
+.admin-content {
+    padding: 60px 0;
+    min-height: 80vh; 
+}
+>>>>>>> e75f6b6ef2bddaa6eb70ca3153b46be7bc7a47d5
 
 .admin-content h1 {
     font-size: 2.5em;
@@ -1221,7 +1229,11 @@
     margin-top: 40px;
     margin-bottom: 20px;
     font-size: 1.8em;
+<<<<<<< HEAD
     color: #010000; 
+=======
+    color: #4CAF50; 
+>>>>>>> e75f6b6ef2bddaa6eb70ca3153b46be7bc7a47d5
 }
 
 
@@ -1247,7 +1259,11 @@
 }
 
 .stat-card i {
+<<<<<<< HEAD
     color: #FF9800; 
+=======
+    color: #FF9800;
+>>>>>>> e75f6b6ef2bddaa6eb70ca3153b46be7bc7a47d5
     margin-bottom: 15px;
 }
 
@@ -1277,7 +1293,11 @@ table {
 }
 
 table th, table td {
+<<<<<<< HEAD
     border: 3px solid #0c0101;
+=======
+    border: 2px solid #0e0101;
+>>>>>>> e75f6b6ef2bddaa6eb70ca3153b46be7bc7a47d5
     padding: 15px;
     text-align: left;
 }
@@ -1287,10 +1307,13 @@ table thead tr {
     color: #4CAF50;
 }
 
-/* Specific button styles for actions */
+
 .accept-btn {
     background-color: #4CAF50; 
+<<<<<<< HEAD
     color: white;
+=======
+>>>>>>> e75f6b6ef2bddaa6eb70ca3153b46be7bc7a47d5
     border: none;
     padding: 8px 15px;
     cursor: pointer;
