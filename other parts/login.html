@@ -17,16 +17,16 @@
             </a>
             
             <div class="mobile-menu">
-                <i class="fas fa-bars"></i>
+          
             </div>
             
             <nav>
                 <ul>
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="restaurants.html">Restaurants</a></li>
-                    <li><a href="how-it-works.html">How It Works</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="../index.html">Contact</a></li>
+                    <li><a href="./order.html">Restaurants</a></li>
+                    <li><a href="../index.html">How It Works</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="./login.html">Contact</a></li>
                 </ul>
             </nav>
             
@@ -46,7 +46,7 @@
                 
                 <ul class="auth-features">
                     <li>Fast delivery in 30-40 minutes</li>
-                    <li>100+ restaurants to choose from</li>
+                    <li>15+ restaurants to choose from</li>
                     <li>Secure payment options</li>
                     <li>Real-time order tracking</li>
                 </ul>
@@ -216,80 +216,6 @@
         </div>
     </footer>
 
-    <script>
-        
-        document.querySelector('.mobile-menu').addEventListener('click', function() {
-            document.querySelector('nav').classList.toggle('active');
-        });
-
-       
-        const toggleButtons = document.querySelectorAll('.toggle-btn');
-        const authForms = document.querySelectorAll('.auth-form');
-        const switchFormLinks = document.querySelectorAll('.switch-form');
-
-        function switchForm(formType) {
-           
-            toggleButtons.forEach(button => {
-                if (button.dataset.form === formType) {
-                    button.classList.add('active');
-                } else {
-                    button.classList.remove('active');
-                }
-            });
-            
-            
-            authForms.forEach(form => {
-                if (form.id === `${formType}-form`) {
-                    form.classList.add('active');
-                } else {
-                    form.classList.remove('active');
-                }
-            });
-        }
-
-        
-        toggleButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                switchForm(this.dataset.form);
-            });
-        });
-
-        
-        switchFormLinks.forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                switchForm(this.dataset.form);
-            });
-        });
-
-        
-        document.getElementById('login-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const email = document.getElementById('login-email').value;
-            const password = document.getElementById('login-password').value;
-            
-            
-            alert(`Login attempted with:\nEmail: ${email}\nPassword: ${password}\n\nIn a real application, this would authenticate the user.`);
-        });
-
-        document.getElementById('signup-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const name = document.getElementById('signup-name').value;
-            const email = document.getElementById('signup-email').value;
-            const phone = document.getElementById('signup-phone').value;
-            const password = document.getElementById('signup-password').value;
-            
-          
-            alert(`Sign up attempted with:\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nPassword: ${password}\n\nIn a real application, this would create a new user account.`);
-        });
-
-        
-        document.querySelectorAll('.social-btn').forEach(button => {
-            button.addEventListener('click', function() {
-                const provider = this.classList.contains('google') ? 'Google' : 'Facebook';
-                alert(`In a real application, this would redirect to ${provider} authentication.`);
-            });
-        });
-    </script>
+   
 </body>
 </html>

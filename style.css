@@ -62,7 +62,7 @@
         }
 
         .card {
-            background: white;
+             background: linear-gradient(to right,rgba(0, 21, 255, 0.778),yellow);
             border-radius: 10px;
             box-shadow: var(--shadow);
             padding: 20px;
@@ -231,7 +231,7 @@
 
         .restaurant-info {
             padding: 20px;
-            background: rgb(169, 233, 147);
+            background: linear-gradient(to right,rgba(0, 21, 255, 0.778),yellow);
         }
 
         .restaurant-info h3 {
@@ -265,7 +265,7 @@
         .user-type {
             text-align: center;
             padding: 40px 20px;
-            background: rgb(240, 221, 156);
+            background: linear-gradient(to right,blue,yellow);
             border-radius: 10px;
             box-shadow: var(--shadow);
         }
@@ -281,10 +281,6 @@
             margin-bottom: 15px;
             color: var(--dark);
         }
-        .user-type .container{
-          
-        }
-
         
         footer {
             background-color: var(--dark);
@@ -398,4 +394,3 @@
                 font-size: 1rem;
             }
         }
-  
